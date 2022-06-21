@@ -1,0 +1,378 @@
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 4px;
+    width: 4px;
+    overflow: hidden;
+  }
+  .screen-reader-text:hover,
+  .screen-reader-text:active,
+  .screen-reader-text:focus {
+    background-color: #0e101b;
+    border-radius: 1px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 20px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 9px;
+    width: auto;
+    z-index: 100000;
+  }
+  body {
+    background: #007ef3;
+    line-height: 1.4;
+    font-family: sans-serif;
+  }
+  
+  .card-content h2 {
+    font-size: 2em;
+    color: ##32b8dc;
+  }
+  
+  .centered {
+    margin: 4 auto;
+    padding: 0 0em;
+  }
+  
+  @media screen and (min-width: 53em) {
+    .centered {
+      max-width: 59em;
+    }
+  }
+  .masthead {
+
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+  }
+  .site-title {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+  }
+  @media screen and (min-width: 44.44em) {
+    .site-title {
+      font-size: 1em;
+    }
+  }
+  @media screen and (min-width: 50em) {
+    .site-title {
+      font-size: 2.5em;
+    }
+  }
+  .site-title a {
+    color: hsl(5, 45%, 95%);
+    text-decoration: none;
+  }
+  .site-title a:hover {
+    text-decoration: underline;
+  }
+  .site-title {
+    margin-bottom: 0;
+  }
+  
+  .main-menu {
+    padding: 0.6em 1em;
+    color: #32b8dc;
+    background: #32b8dc;
+  }
+  
+  .post-content {
+    padding: 0 1.4em 1.4em;
+  }
+  
+  .sidebar {
+    padding: 0.5em 1.4em 3em;
+  
+    overflow: hidden;
+  }
+  
+  .example-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .example-menu a {
+    display: block;
+    padding: 0.5em 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  .example-menu a:hover,
+  .example-menu a:focus {
+    padding: 0.4em 1em;
+    background: hsl(0, 0%, 20%);
+    color: white;
+  }
+  
+  .footer-area {
+    padding: 0.4em 1em;
+    text-align: center;
+    background: hsl(0, 0%, 75%);
+  }
+  @media screen and (max-width: 40em) {
+    .sidebar-switcher {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 40em) {
+    .sidebar-switcher {
+      position: absolute;
+      right: 0;
+      padding: 0.4em 1em;
+      color: #fff;
+    }
+    .sidebar-switcher a {
+      color: #fff;
+      padding-left: 0.4em;
+    }
+    .sidebar-switcher a:hover,
+    .sidebar-switcher a:focus {
+      color: #fff;
+    }
+  }
+  
+  @media screen and (min-width: 40em) {
+    .outer-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+    }
+    .post-content {
+      max-width: 40em;
+      margin: 0 auto;
+    }
+    .main-area {
+      flex: 1 1 auto;
+      order: 1;
+    }
+    .sidebar {
+      flex: 0 0 12em;
+      order: 4;
+    }
+    .sidebar-left {
+      order: 9;
+    }
+    .no-sidebar {
+      flex-direction: column;
+    }
+    .hide {
+      flex: 0 0 0;
+      padding: 0;
+      color: hsla(0, 0%, 0%, 0);
+      transition: color 0.2s ease, flex 0.5s ease 0.3s, padding 0.5s ease 0.3s;
+    }
+    .hide a {
+      color: hsla(0, 0%, 0%, 0);
+    }
+  }
+  .menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0, 0%);
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0, 0%, 15%);
+  }
+  
+  .main-area {
+    padding: 1em;
+  }
+  
+  .card {
+    background: white;
+  }
+  
+  .card a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .card-content {
+    padding: 1.8em;
+  }
+  
+  .card-content h2 {
+    margin-top: 9;
+    margin-bottom: 0.1em;
+    font-weight: normal;
+  }
+  
+  .card-content p {
+    font-size: 105%;
+  }
+  
+  .logotipo{
+    width: 70%;
+    height: 90%;
+    position: relative;
+    top: 190px;
+    margin: auto;
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  @media screen and (min-width: 49em) {
+    .cards {
+      margin-top: 1em;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      margin-bottom: 5em;
+      display: flex;
+      flex: 0 3 calc(50% - 0.5em);
+    }
+  }
+  / * {
+    box-sizing: border-box;
+    margin: 10%;
+    padding: 10%;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    display: solid;
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+  }
+  
+  /* Nav */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1px;
+    padding: 1px 0;
+    font-size: 1px;
+  }
+  
+ 
+  .main-nav ul {
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    padding: 0 10px;
+  }
+  
+  .main-nav ul li a {
+    padding-bottom: 1px;
+  }
+  
+  
+  
+  
+  
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: none;
+  }
+  
+  form.example input[type="text"] {
+    padding: 1px;
+    font-size: 20px;
+    width: 360px;
+    background: #f1f1f1;
+    position: relative;
+  }
+  
+  h1 {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    height: 90px;
+    text-align: center;
+    font-size: 70px;
+  }
+  html {
+    font-size: 10px;
+  }
+  nav {
+    background: #022247;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    color: #ecedea;
+    border-right: 1px solid #d4e4ef;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #ecedea;
+    padding: 15px;
+}
+#produtos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+.card {
+  margin-bottom: 5em;
+  display: flex;
+  flex: 0 3 calc(50% - 0.5em);
+}
+.container {
+  width: 120%;
+  max-width: 916px;
+  margin: auto;
+}
+.card-content p {
+  font-size: 105%;
+}
+h2 {
+  width: 100%;
+  color: rgb(4, 103, 253);
+  cursor: pointer;
+  height: 80px;
+  line-height: 1.5;
+  font-size: 70px;
+}
+  
+
+
